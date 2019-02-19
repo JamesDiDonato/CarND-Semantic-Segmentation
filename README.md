@@ -1,5 +1,5 @@
 # Semantic Segmentation
-This project was completed as part of my enrollment in the Self Driving Car Engineer Nanodegree offered by Udacity.
+This project was completed in Feburary '19 as part of my enrollment in the Self Driving Car Engineer Nanodegree offered by Udacity.
 
 [//]: # (Image References)
 [image1]: ./pictures/architecture.png "architecture"
@@ -10,7 +10,7 @@ This project was completed as part of my enrollment in the Self Driving Car Engi
 
 ## Requirements
 
-The goal of this project is to implement a Fully Convolutional Neural Network (FCN) that is capable of labelling the 'open road' pixels from images taken by a front facing camera on an automobile. The implementation must be capable of labelling a reliable number of pixels in the test images accurately such that the output could be confidently fed to a path planner within a real-world self driving car application. The KITTI dataset will be used in the training and testing of the FCN, and is available for download  [here](http://www.cvlibs.net/datasets/kitti/eval_road.php).
+The goal of this project is to implement a Fully Convolutional Neural Network (FCN) that is capable of labelling the 'open road' pixels from images taken by a front facing automobile camera. The implementation must be capable of labelling a reliable number of pixels in the test images accurately such that the output could be confidently fed to a path planner within a real-world self driving car application. The KITTI dataset will be used in the training and testing of the FCN, and is available for download  [here](http://www.cvlibs.net/datasets/kitti/eval_road.php).
 
 Here is an example of a succesfull and un-succesfull result:
 
