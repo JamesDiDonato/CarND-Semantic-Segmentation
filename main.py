@@ -19,7 +19,7 @@ else:
     
     
 #global variables / hyper-parameters
-EPOCHS = 20
+EPOCHS = 30
 BATCH_SIZE = 5
 KEEP_PROB = 0.6
 LEARNING_RATE = 0.0005
@@ -155,8 +155,7 @@ def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
     #Loss Function (include regularization losses here)
     cross_entropy_loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits( \
                                          logits= logits, labels= correct_label))    
-    reg_loss = tf.add_n(tf.get_collection(tf.GraphKeys.REGULARIZATION_LOSSES))
-    cross_entropy_loss = cross_entropy_loss + reg_loss
+    cross_entropy_loss = cross_entropy_loss + tf.losses.get_regularization_loss()
     
     #Training using AdamOptimizer
     optimizer = tf.train.AdamOptimizer(learning_rate = learning_rate)
